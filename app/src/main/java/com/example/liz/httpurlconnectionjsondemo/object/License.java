@@ -7,26 +7,25 @@ public class License {
     public License() {
     }
 
-    public License(String mKey, String mName) {
-        this.mKey = mKey;
-        this.mName = mName;
+    public License(String key, String name) {
+        mKey = key;
+        mName = name;
     }
 
-    public String getmKey() {
+    public String getKey() {
         return mKey;
     }
 
-    public void setmKey(String mKey) {
-        this.mKey = mKey;
+    public void setKey(String key) {
+        mKey = key;
     }
 
-
-    public String getmName() {
+    public String getName() {
         return mName;
     }
 
-    public void setmName(String mName) {
-        this.mName = mName;
+    public void setName(String name) {
+        mName = name;
     }
 
     @Override

@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">HttpURLConnectionJSONDemo</string>
+    <string name="repo_id">Repo ID : </string>
+    <string name="repo_name">Repo ID : </string>
+    <string name="owner_id">Owner ID : </string>
+    <string name="owner_login">Owner Login  : </string>
+    <string name="license_key">License Key : </string>
+    <string name="license_name">License Name : </string>
 </resources>

@@ -10,43 +10,43 @@ public class Repo {
     public Repo() {
     }
 
-    public Repo(String mId, String mName, Owner mOwner, License mLicense) {
-        this.mId = mId;
-        this.mName = mName;
-        this.mOwner = mOwner;
-        this.mLicense = mLicense;
+    public Repo(String id, String name, Owner owner, License license) {
+        mId = id;
+        mName = name;
+        mOwner = owner;
+        mLicense = license;
     }
 
-    public String getmId() {
+    public String getId() {
         return mId;
     }
 
-    public void setmId(String mId) {
-        this.mId = mId;
+    public void setId(String id) {
+        mId = id;
     }
 
-    public String getmName() {
+    public String getName() {
         return mName;
     }
 
-    public void setmName(String mName) {
-        this.mName = mName;
+    public void setName(String name) {
+        mName = name;
     }
 
-    public Owner getmOwner() {
+    public Owner getOwner() {
         return mOwner;
     }
 
-    public void setmOwner(Owner mOwner) {
-        this.mOwner = mOwner;
+    public void setOwner(Owner owner) {
+        mOwner = owner;
     }
 
-    public License getmLicense() {
+    public License getLicense() {
         return mLicense;
     }
 
-    public void setmLicense(License mLicense) {
-        this.mLicense = mLicense;
+    public void setLicense(License license) {
+        mLicense = license;
     }
 
     @Override

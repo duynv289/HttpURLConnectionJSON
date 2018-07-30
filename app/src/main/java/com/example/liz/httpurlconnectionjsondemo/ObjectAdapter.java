@@ -1,5 +1,6 @@
 package com.example.liz.httpurlconnectionjsondemo;
 
+import android.annotation.SuppressLint;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -49,20 +50,21 @@ public class ObjectAdapter extends RecyclerView.Adapter<ObjectAdapter.ObjectView
         private TextView mTextViewNameLiscense;
         public ObjectViewHolder(@NonNull View itemView) {
             super(itemView);
-            mTextViewIdRepo         = itemView.findViewById(R.id.text_idrepo);
-            mTextViewNameRepo       = itemView.findViewById(R.id.text_namerepo);
-            mTextViewIdOwner        = itemView.findViewById(R.id.text_idowner);
-            mTextViewLoginOwner     = itemView.findViewById(R.id.text_loginowner);
-            mTextViewKeyLiscense    = itemView.findViewById(R.id.text_keyliscense);
-            mTextViewNameLiscense   = itemView.findViewById(R.id.text_nameliscense);
+            mTextViewIdRepo         = itemView.findViewById(R.id.text_id_repo);
+            mTextViewNameRepo       = itemView.findViewById(R.id.text_name_repo);
+            mTextViewIdOwner        = itemView.findViewById(R.id.text_id_owner);
+            mTextViewLoginOwner     = itemView.findViewById(R.id.text_login_owner);
+            mTextViewKeyLiscense    = itemView.findViewById(R.id.text_key_license);
+            mTextViewNameLiscense   = itemView.findViewById(R.id.text_name_license);
         }
+        @SuppressLint("SetTextI18n")
         public void setView(Repo repo){
-            mTextViewIdRepo.setText("Repo ID : "+repo.getmId());
-            mTextViewNameRepo.setText("Repo Name :"+repo.getmName());
-            mTextViewIdOwner.setText("Owner ID :"+repo.getmOwner().getmID());
-            mTextViewLoginOwner.setText("Owner Login : "+repo.getmOwner().getmLogin());
-            mTextViewKeyLiscense.setText("License Key : "+repo.getmLicense().getmKey());
-            mTextViewNameLiscense.setText("License Name : "+repo.getmLicense().getmName());
+            mTextViewIdRepo.setText(R.string.repo_id+repo.getmId());
+            mTextViewNameRepo.setText(R.string.repo_name+repo.getmName());
+            mTextViewIdOwner.setText(R.string.owner_id+repo.getmOwner().getmID());
+            mTextViewLoginOwner.setText(R.string.owner_login+repo.getmOwner().getmLogin());
+            mTextViewKeyLiscense.setText(R.string.license_key+repo.getmLicense().getmKey());
+            mTextViewNameLiscense.setText(R.string.license_name+repo.getmLicense().getmName());
         }
     }
 }

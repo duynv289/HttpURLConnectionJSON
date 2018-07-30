@@ -7,17 +7,25 @@ public class Owner {
     public Owner() {
     }
 
-    public Owner(String mID, String mLogin) {
-        this.mID = mID;
-        this.mLogin = mLogin;
+    public Owner(String ID, String login) {
+        mID = ID;
+        mLogin = login;
     }
 
-    public String getmID() {
+    public String getID() {
         return mID;
     }
 
-    public void setmID(String mID) {
-        this.mID = mID;
+    public void setID(String ID) {
+        mID = ID;
+    }
+
+    public String getLogin() {
+        return mLogin;
+    }
+
+    public void setLogin(String login) {
+        mLogin = login;
     }
 
     @Override
@@ -26,13 +34,5 @@ public class Owner {
                 "mID='" + mID + '\'' +
                 ", mLogin='" + mLogin + '\'' +
                 '}';
-    }
-
-    public String getmLogin() {
-        return mLogin;
-    }
-
-    public void setmLogin(String mLogin) {
-        this.mLogin = mLogin;
     }
 }
