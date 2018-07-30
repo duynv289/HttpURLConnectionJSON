@@ -41,7 +41,7 @@ public class ObjectAdapter extends RecyclerView.Adapter<ObjectAdapter.ObjectView
         return 0;
     }
 
-    class ObjectViewHolder extends RecyclerView.ViewHolder{
+    static class ObjectViewHolder extends RecyclerView.ViewHolder{
         private TextView mTextViewIdRepo;
         private TextView mTextViewNameRepo;
         private TextView mTextViewIdOwner;
@@ -59,12 +59,12 @@ public class ObjectAdapter extends RecyclerView.Adapter<ObjectAdapter.ObjectView
         }
         @SuppressLint("SetTextI18n")
         public void setView(Repo repo){
-            mTextViewIdRepo.setText(R.string.repo_id+repo.getmId());
-            mTextViewNameRepo.setText(R.string.repo_name+repo.getmName());
-            mTextViewIdOwner.setText(R.string.owner_id+repo.getmOwner().getmID());
-            mTextViewLoginOwner.setText(R.string.owner_login+repo.getmOwner().getmLogin());
-            mTextViewKeyLiscense.setText(R.string.license_key+repo.getmLicense().getmKey());
-            mTextViewNameLiscense.setText(R.string.license_name+repo.getmLicense().getmName());
+            mTextViewIdRepo.setText(R.string.repo_id+repo.getId());
+            mTextViewNameRepo.setText(R.string.repo_name+repo.getName());
+            mTextViewIdOwner.setText(R.string.owner_id+repo.getOwner().getID());
+            mTextViewLoginOwner.setText(R.string.owner_login+repo.getOwner().getLogin());
+            mTextViewKeyLiscense.setText(R.string.license_key+repo.getLicense().getKey());
+            mTextViewNameLiscense.setText(R.string.license_name+repo.getLicense().getName());
         }
     }
 }

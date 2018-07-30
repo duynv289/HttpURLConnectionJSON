@@ -19,7 +19,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
 
-public class getAPITask extends AsyncTask<String,Void,ArrayList<Repo>> {
+public class GetAPITask extends AsyncTask<String,Void,ArrayList<Repo>> {
     private static final String KEY_ID = "id";
     private static final String KEY_NAME = "name";
     private static final String KEY_OWNER = "owner";
@@ -29,7 +29,7 @@ public class getAPITask extends AsyncTask<String,Void,ArrayList<Repo>> {
     private static final String REQUEST_METHOD = "GET";
     private OnLoadFinishedListener mListener;
 
-    public getAPITask(OnLoadFinishedListener mListener) {
+    public GetAPITask(OnLoadFinishedListener mListener) {
         this.mListener = mListener;
     }
 
@@ -46,9 +46,7 @@ public class getAPITask extends AsyncTask<String,Void,ArrayList<Repo>> {
             BufferedReader bufferedReader = new BufferedReader(in);
             String inputLine;
             while ((inputLine = bufferedReader.readLine()) != null){
-                Log.e("Data",inputLine+"");
                 sb.append(inputLine);
-                Log.e("aa",sb+"");
             }
             bufferedReader.close();
             conn.disconnect();

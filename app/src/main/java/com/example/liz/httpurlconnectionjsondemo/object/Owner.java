@@ -1,23 +1,23 @@
 package com.example.liz.httpurlconnectionjsondemo.object;
 
 public class Owner {
-    private String mID;
+    private String mId;
     private String mLogin;
 
     public Owner() {
     }
 
     public Owner(String ID, String login) {
-        mID = ID;
+        mId = ID;
         mLogin = login;
     }
 
     public String getID() {
-        return mID;
+        return mId;
     }
 
     public void setID(String ID) {
-        mID = ID;
+        mId = ID;
     }
 
     public String getLogin() {
@@ -31,7 +31,7 @@ public class Owner {
     @Override
     public String toString() {
         return "Owner{" +
-                "mID='" + mID + '\'' +
+                "mID='" + mId + '\'' +
                 ", mLogin='" + mLogin + '\'' +
                 '}';
     }

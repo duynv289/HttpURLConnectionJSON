@@ -10,7 +10,7 @@ import com.example.liz.httpurlconnectionjsondemo.object.Repo;
 
 import java.util.ArrayList;
 
-public class MainActivity extends AppCompatActivity implements getAPITask.OnLoadFinishedListener{
+public class MainActivity extends AppCompatActivity implements GetAPITask.OnLoadFinishedListener{
 
     private static final String URL_API = "https://api.github.com/users/google/repos";
     private RecyclerView mRecyclerView;
@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity implements getAPITask.OnLoad
         setContentView(R.layout.activity_main);
         mRecyclerView = findViewById(R.id.recycler_view);
 
-        new getAPITask(this).execute(URL_API);
+        new GetAPITask(this).execute(URL_API);
 
     }
 
